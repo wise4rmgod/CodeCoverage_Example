@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CodeCoverage_Example</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="add_video_url">Add Video Url</string>
+    <string name="save">Save</string>
+    <string name="show_text_here">Show Text here</string>
+    <string name="show_text">Show Text</string>
 </resources>

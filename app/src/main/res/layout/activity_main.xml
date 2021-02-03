@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/root"
     tools:context=".ui.MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -14,7 +15,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:hint="Title"
+        android:hint="@string/title"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -31,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:hint="Description"
+        android:hint="@string/description"
         app:layout_constraintTop_toBottomOf="@id/outlinedTextField">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -42,56 +43,22 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/addvideourlTextField"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:hint="Add Video Url"
-        app:layout_constraintTop_toBottomOf="@id/adddescriptionTextField">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/addvideourl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/autoComplete"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/addvideourlTextField">
-
-        <AutoCompleteTextView
-            android:id="@+id/autoCompletevalue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <Button
         android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Save"
-        app:layout_constraintTop_toBottomOf="@id/autoComplete" />
+        android:text="@string/show_text"
+        app:layout_constraintTop_toBottomOf="@id/adddescriptionTextField" />
 
-    <Button
-        android:id="@+id/nextbtn"
+    <TextView
+        android:id="@+id/showt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Next screen"
+        android:text="@string/show_text_here"
         app:layout_constraintTop_toBottomOf="@id/save" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

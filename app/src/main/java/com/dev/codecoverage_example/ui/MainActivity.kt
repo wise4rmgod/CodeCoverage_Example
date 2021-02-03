@@ -2,9 +2,8 @@ package com.dev.codecoverage_example.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import com.dev.codecoverage_example.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.activity_main.*
+import com.dev.codecoverage_example.firebase.TextMethods
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -15,12 +14,17 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val arrayvalue = arrayOf("akuko", "ilu", "egwuregwu")
-        val adapter = ArrayAdapter(
-            applicationContext!!,
-            android.R.layout.simple_list_item_1,
-            arrayvalue
-        )
-        binding.autoCompletevalue.setAdapter(adapter)
+
+        binding.save.setOnClickListener {
+            //   showt.text = TextMethods.counttext(addtitle.text.toString(), adddescription.text.toString()).toString()
+
+            binding.showt.text =
+                TextMethods.capitalizeText(
+                    binding.addtitle.text.toString(),
+                    binding.adddescription.text.toString()
+                )
+
+        }
     }
+
 }
