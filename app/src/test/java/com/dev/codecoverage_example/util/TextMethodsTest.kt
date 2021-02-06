@@ -10,7 +10,6 @@ class TextMethodsTest {
     @Test
     fun counttext() {
         val yu = TextMethods.counttext("tuuuuu", "")
-        // assertEquals("tre", "2", yu)
         // assertTrue("text contains two characters", yu == 2)
         //  assertNotNull("text is not null", yu)
         assertThat(yu).isGreaterThan(4)
