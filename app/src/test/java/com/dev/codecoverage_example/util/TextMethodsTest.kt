@@ -6,7 +6,6 @@ import com.google.common.truth.Truth.assertThat
 
 class TextMethodsTest {
 
-
     @Test
     fun counttext() {
         val yu = TextMethods.counttext("tuuuuu", "")
