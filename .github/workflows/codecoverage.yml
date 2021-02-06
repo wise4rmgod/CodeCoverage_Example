@@ -29,15 +29,17 @@ jobs:
       - name: generate report
         uses: actions/upload-artifact@v2
         with:
+          shell: bash <(curl -s https://codecov.io/bash)
           path: app/build/test-results
+            
       
    #   - name: Download Test Reports Folder
     #    uses: actions/download-artifact@v2
      #   with:
        #   name: generate report
         
-      - name: Upload Test Report
-        run:   bash <(curl -s https://codecov.io/bash)
+     # - name: Upload Test Report
+      #  run:   bash <(curl -s https://codecov.io/bash)
         
      
         
