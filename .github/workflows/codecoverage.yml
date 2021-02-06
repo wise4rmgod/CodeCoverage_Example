@@ -32,5 +32,5 @@ jobs:
       - name: generate report
         uses: actions/upload-artifact@v2
         with:
-          path: app/build/test-results
+          path: app/build/reports/tests/testDebugUnitTest
         
