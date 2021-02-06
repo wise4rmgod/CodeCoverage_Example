@@ -31,10 +31,10 @@ jobs:
         with:
           path: app/build/reports/tests/testDebugUnitTest
       
-      - name: Download Test Reports Folder
-        uses: actions/download-artifact@v2
-        with:
-          name: generate report
+   #   - name: Download Test Reports Folder
+    #    uses: actions/download-artifact@v2
+     #   with:
+       #   name: generate report
         
       - name: Upload Test Report
         run:   bash <(curl -s https://codecov.io/bash)
