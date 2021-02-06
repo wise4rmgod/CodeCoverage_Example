@@ -38,8 +38,8 @@ jobs:
      #   with:
        #   name: generate report
         
-     # - name: Upload Test Report
-      #  run:   bash <(curl -s https://codecov.io/bash)
+      - name: Upload Test Report
+        run:   bash <(curl -s https://codecov.io/bash)
         
      
         
