@@ -3,7 +3,7 @@ package com.dev.codecoverage_example.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dev.codecoverage_example.databinding.ActivityMainBinding
-import com.dev.codecoverage_example.firebase.TextMethods
+import com.dev.codecoverage_example.util.TextMethods
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

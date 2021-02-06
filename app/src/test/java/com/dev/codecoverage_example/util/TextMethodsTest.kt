@@ -1,4 +1,4 @@
-package com.dev.codecoverage_example.firebase
+package com.dev.codecoverage_example.util
 
 import org.junit.Test
 import com.google.common.truth.Truth.assertThat
