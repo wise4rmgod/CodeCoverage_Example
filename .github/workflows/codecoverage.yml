@@ -42,8 +42,8 @@ jobs:
           path: app/build/test-results   
         
       - name: Upload Test Report
-        run:  -f "app/build/reports/tests/"
-        #bash <(curl -s https://codecov.io/bash) 
+        run:  bash <(curl -s https://codecov.io/bash) -f "app/build/reports/tests/"
+              
         
         
      
