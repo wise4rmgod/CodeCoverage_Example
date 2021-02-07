@@ -1,6 +1,8 @@
-codecov:
-  disable_default_path_fixes: true
-#fixes:
-# app/build/reports/tests/testDebugUnitTest
-#- "/app/build/reports/tests/testDebugUnitTest>/::"
-# - "/home/runner/work/CodeCoverage_Example/app/build/reports/tests>/::"
+{
+    "fixes": [
+        "/home/runner/work/CodeCoverage_Example/CodeCoverage_Example>/::"
+    ],
+    "codecov": {
+        "disable_default_path_fixes": true
+    }
+}
