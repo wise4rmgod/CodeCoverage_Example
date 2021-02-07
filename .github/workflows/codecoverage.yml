@@ -24,12 +24,13 @@ jobs:
 
        # Execute unit tests
       - name: Unit Test
-        run: ./gradlew testDebugUnitTest
+        run: ./gradlew connectedCheck
+        #./gradlew testDebugUnitTest
         
       - name: generate report
         uses: actions/upload-artifact@v2
         with:
-          path: app/build/reports/tests/testDebugUnitTest  
+          path: app/build/test-results 
          # path: app/build/test-results
             
       
@@ -39,7 +40,8 @@ jobs:
        #   name: generate report
         
       - name: Upload Test Report
-        run:   bash <(curl -s https://codecov.io/bash) -f "app/build/test-results/testDebugUnitTest/index.html"
+        run:   bash <(curl -s https://codecov.io/bash) 
+        # -f "app/build/test-results/testDebugUnitTest/index.html"
         
      
         
