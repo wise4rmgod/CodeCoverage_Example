@@ -23,8 +23,13 @@ jobs:
       - uses: actions/checkout@v2
 
        # Execute unit tests
-      - name: Unit Test
-        run: ./gradlew testDebugUnitTest
+      - name: Unit Test with Android Emulator Runner
+        uses: ReactiveCircus/android-emulator-runner@v2.14.3
+        with: 
+            api-level: 29
+            script: ./gradlew createDebugCoverageReport
+
+       # run: ./gradlew testDebugUnitTest
         
       - name: generate report
         uses: actions/upload-artifact@v2
