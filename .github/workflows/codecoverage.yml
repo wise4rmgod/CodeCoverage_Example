@@ -39,7 +39,7 @@ jobs:
        #   name: generate report
         
       - name: Upload Test Report
-        run:   bash <(curl -s https://codecov.io/bash) -f "app/build/test-results"
+        run:   bash <(curl -s https://codecov.io/bash) -f "app/build/test-results/testDebugUnitTest/index.html"
         
      
         
