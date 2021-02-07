@@ -30,14 +30,15 @@ jobs:
       - name: generate report
         uses: actions/upload-artifact@v2
         with:
+          name: report 
           path: app/build/test-results 
          # path: app/build/test-results
             
       
-   #   - name: Download Test Reports Folder
-    #    uses: actions/download-artifact@v2
-     #   with:
-       #   name: generate report
+      - name: Download Test Reports Folder
+        uses: actions/download-artifact@v2
+        with:
+          name: report
         
       - name: Upload Test Report
         run:   bash <(curl -s https://codecov.io/bash) 
