@@ -36,13 +36,13 @@ jobs:
       
       - name: Download Test Reports Folder
         uses: actions/download-artifact@v2
-        
         with:
           name: report
           path: app/build/test-results   
         
       - name: Upload Test Report
-        run:  bash <(curl -s https://codecov.io/bash) -f "app/build/reports/tests/"
+        run:  bash <(curl -s https://codecov.io/bash) -v
+        #-f "app/build/reports/tests/"
               
         
         
