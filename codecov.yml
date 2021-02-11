@@ -1,6 +1,7 @@
 {
     "fixes": [
-        "/home/runner/work/CodeCoverage_Example/CodeCoverage_Example>/::"
+         - "debugAndroidTest/::app/src/test/java/"
+      #  "/home/runner/work/CodeCoverage_Example/CodeCoverage_Example>/::"
     ],
     "codecov": {
         "disable_default_path_fixes": true
