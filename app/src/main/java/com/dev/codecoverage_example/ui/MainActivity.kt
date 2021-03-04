@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-
         binding.save.setOnClickListener {
             //   showt.text = TextMethods.counttext(addtitle.text.toString(), adddescription.text.toString()).toString()
 

@@ -51,6 +51,9 @@ android {
         unitTests.returnDefaultValues = true
     }
 
+    lintOptions {
+        abortOnError false
+    }
 
     buildTypes {
         debug {
