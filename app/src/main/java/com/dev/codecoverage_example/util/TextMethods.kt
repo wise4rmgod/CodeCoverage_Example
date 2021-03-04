@@ -15,5 +15,4 @@ object TextMethods {
         return ty.toUpperCase()
     }
 
-
 }
