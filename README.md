@@ -10,3 +10,4 @@ This is an Example of an Android project that generates Codecoverage using Jacoc
 
 # Contributions and Issues
 You can feel free to contribute 
+
